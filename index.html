@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="weather-input">
+            <div class="input-group">
+                <input type="text" name="userlocation" id="userlocation" placeholder="Search for places">
+                <select class="converter" id="converter">
+                    <option>*C</option>
+                    <option>*F</option>
+                </select>
+                <i class="fa fa-search" onclick="findUserLocation()"></i>
+            </div>
+            <div class="weatherIcon">
+
+            </div>
+            <h2 class="temperature">
+
+            </h2>
+            <div class="feelsLike">
+
+            </div>
+            <div class="description">
+
+            </div>
+            <hr />
+            <div class="date">
+
+            </div>
+            <div class="city"></div>
+        </div>
+        <div class="weather-output">
+            <h2 class="heading">Today's Highlight</h2>
+            <div class="Highlights">
+                <div class="humidity">
+                    humidity
+                    <i class="fa-solid fa-water"></i>
+                    <h1 id="HValue"></h1>
+                </div>
+                <div class="wind speed">
+                    wind speed
+                    <i class="fa-solid fa-wind"></i>
+                    <h1 id="WValue"></h1>
+                </div>
+                <div class="sun">
+                   <span>
+                    <i class="fa-solid fa-sun"></i>
+                    <p><span id="SRValue"></span>Sunrise</p>
+                   </span>
+                   <span>
+                    <i class="fa-solid fa-sun"></i>
+                    <p><span id="SSValue"></span>Sunset</p>
+                   </span>
+                </div>
+                <div class="clouds">
+                    clouds
+                    <i class="fa-solid fa-cloud"></i>
+                    <h1 id="CValue"></h1>
+                </div>
+                <div class="uv-index">
+                    uv-index
+                    <i class="fa-solid fa-bacon"></i>
+                    <h1 id="UVValue"></h1>
+                </div>
+                <div class="pressure">
+                    Pressure
+                    <i class="fa-solid fa-volcano"></i>
+                    <h1 id="PValue"></h1>
+                </div>
+            </div>
+            <h2 class="heading">Weather Forecast</h2>
+            <div class="Forecast">
+                <div class="day">
+                    <h3>Monday</h3>
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <p>25°C</p>
+                </div>
+                <div class="day">
+                    <h3>Tuesday</h3>
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>22°C</p>
+                </div>
+                <div class="day">
+                    <h3>Wednesday</h3>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <p>20°C</p>
+                </div>
+                <div class="day">
+                    <h3>Thursday</h3>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <p>20°C</p>
+                </div>
+                <div class="day">
+                    <h3>Friday</h3>
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <p>20°C</p>
+                </div>
+                <div class="day">
+                    <h3>Saturday</h3>
+                    <i class="fa-solid fa-cloud"></i>
+                    <p>20°C</p>
+                </div>
+                <div class="day">
+                    <h3>Sunday</h3>
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <p>20°C</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
