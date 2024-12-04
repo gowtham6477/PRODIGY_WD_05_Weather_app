@@ -56,12 +56,10 @@ function findUserLocation() {
         });
 }
 
-// Function to update the weather forecast
 function updateForecast(data) {
     const forecastContainer = document.querySelector(".Forecast");
-    forecastContainer.innerHTML = ""; // Clear existing content
+    forecastContainer.innerHTML = ""; 
 
-    // Loop through the next 7 days for the weather forecast
     data.days.slice(0, 7).forEach((day) => {
         const dayElement = document.createElement("div");
         dayElement.classList.add("day");
@@ -74,26 +72,26 @@ function updateForecast(data) {
     });
 }
 
-// Function to get the appropriate weather icon based on condition
+
 function getWeatherIcon(condition) {
     if (condition.includes("rain")) return "fa-cloud-showers-heavy";
     if (condition.includes("cloud")) return "fa-cloud";
     return "fa-sun";
 }
 
-// Convert temperature between Celsius and Fahrenheit
+
 function tempConverter(temp, toUnit) {
     if (toUnit === "*F") {
-        return Math.round((temp * 9 / 5) + 32); // Celsius to Fahrenheit
+        return Math.round((temp * 9 / 5) + 32);
     } else if (toUnit === "*C") {
-        return Math.round((temp - 32) * 5 / 9); // Fahrenheit to Celsius
+        return Math.round((temp - 32) * 5 / 9); 
     }
-    return temp; // Default: Return input if no conversion needed
+    return temp; 
 }
 
-// Convert the temperature based on selected unit
+
 function convertTemperature(currentTemp) {
-    const selectedUnit = converter.value; // Get selected unit (*C or *F)
+    const selectedUnit = converter.value; 
     const convertedTemp = tempConverter(currentTemp, selectedUnit);
 
     temperature.innerHTML = `${convertedTemp}°${selectedUnit[1]}`;
@@ -101,8 +99,8 @@ function convertTemperature(currentTemp) {
     feelsLike.innerHTML = `Feels like: ${convertedFeelsLike}°${selectedUnit[1]}`;
 }
 
-// Event listener to update the forecast and temperature when the converter value changes
+
 converter.addEventListener("change", () => {
-    const currentTemp = parseFloat(temperature.textContent.match(/[\d.]+/)[0]); // Get the current temperature
+    const currentTemp = parseFloat(temperature.textContent.match(/[\d.]+/)[0]); 
     convertTemperature(currentTemp);
 });
