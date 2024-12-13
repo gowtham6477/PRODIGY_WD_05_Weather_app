@@ -1,6 +1,6 @@
 # PRODIGY_WD_05_Weather_app
 
-Welcome to the **PRODIGY_WD_05_Weather_app** repository! This project is aimed at showcasing web development skills, incorporating both frontend and backend technologies to build dynamic, user-friendly web applications.
+Welcome to the **PRODIGY_WD_05_Weatherapp** repository! This project is aimed at showcasing web development skills, incorporating both frontend and backend technologies to build dynamic, user-friendly web applications.
 
 ---
 
