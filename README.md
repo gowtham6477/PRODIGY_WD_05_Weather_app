@@ -2,7 +2,7 @@
 # Weather_App
 
 ![Preview](weather_app.png)
-### 🔗 **Live preview** of the project is [here](https://gowtham6477.github.io/PRODIGY_WD_01_Responsive_landing_page/).
+### 🔗 **Live preview** of the project is [here](https://gowtham6477.github.io/PRODIGY_WD_05_Weather_app/).
 The Weather App is a web application that allows users to check real-time weather information for any city. This app provides data such as temperature, humidity, wind speed, and a brief description of the current weather conditions. It is designed to be simple, intuitive, and responsive.
 
 ## 🚀 Features
