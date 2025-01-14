@@ -1,5 +1,5 @@
 
-# Weather_App
+# Weather web App
 
 ![Preview](weather_app.png)
 ### 🔗 **Live preview** of the project is [here](https://gowtham6477.github.io/PRODIGY_WD_05_Weather_app/).
